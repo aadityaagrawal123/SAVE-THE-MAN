@@ -141,7 +141,6 @@ function spawnObstacles () {
     var obstacle = createSprite(width/1,height/1.15,10,40);
    obstacle.velocityX = -7;
     
-     //generate random obstacles
      var rand = Math.round(random(1,3));
      switch(rand) {
        case 1: obstacle.addImage(stoneImg);
@@ -153,7 +152,7 @@ function spawnObstacles () {
        default: break;
      }
               
-     obstacle.scale = 0.2;
+     obstacle.scale = 0.185;
      obstacle.lifetime = 450;
     
      obstaclesGroup.add(obstacle);
